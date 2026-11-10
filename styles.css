@@ -540,3 +540,219 @@ tbody tr:hover{background:#fff3e9}
   .map-layers{max-width:calc(100% - 20px);width:276px}
   .table-panel{padding:10px}
 }
+
+
+/* =========================
+   V3.8 — Vibrant SUO Refresh
+   ========================= */
+:root{
+  --accent:#f06b27;
+  --accent2:#d8492f;
+  --gold:#f5b13a;
+  --text:#14243a;
+  --muted:#66768a;
+}
+body{
+  background:
+    radial-gradient(circle at 92% 2%,rgba(245,177,58,.18),transparent 24%),
+    radial-gradient(circle at 6% 18%,rgba(240,107,39,.10),transparent 22%),
+    linear-gradient(145deg,#fffaf5 0%,#fff3e8 46%,#f7eee6 100%);
+}
+
+/* Stronger SUO header identity */
+.topbar{
+  background:
+    linear-gradient(100deg,rgba(255,255,255,.99) 0%,rgba(255,247,237,.99) 64%,rgba(255,237,219,.97) 100%);
+  border-bottom:2px solid rgba(240,107,39,.18);
+}
+.topbar::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,#f3b33d 0%,#ee732e 45%,#d84a2f 100%);
+  opacity:.85;
+}
+.eyebrow{color:#d54e30}
+.topbar h1{color:#10233c}
+
+/* KPI cards with stronger identities */
+.kpis-v3 .kpi{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(180deg,#fff 0%,#fff7ef 100%);
+  border-color:#ead3bf;
+}
+.kpis-v3 .kpi::before{
+  content:"";
+  position:absolute;
+  left:0;top:0;bottom:0;width:4px;
+  background:linear-gradient(180deg,#f4b13b,#ef6a29);
+  opacity:.95;
+}
+.kpis-v3 .kpi:nth-child(2)::before{background:linear-gradient(180deg,#537fbd,#285c9f)}
+.kpis-v3 .kpi:nth-child(3)::before{background:linear-gradient(180deg,#f09a2f,#d84f2e)}
+.kpis-v3 .kpi:nth-child(4)::before{background:linear-gradient(180deg,#f2b93d,#e47c26)}
+.kpis-v3 .kpi-iconbox{
+  background:
+    radial-gradient(circle at 50% 35%,#fff 0%,#fff7ef 68%,#f9eadc 100%);
+}
+.kpis-v3 .kpi-copy span{color:#7d6d5e}
+.kpis-v3 .kpi-copy strong{color:#172943}
+.kpis-v3 .kpi-filter.active-filter{
+  background:linear-gradient(135deg,#fffaf5,#fff0e5);
+  border-color:#ef8c58;
+  box-shadow:0 10px 26px rgba(228,100,42,.18);
+}
+.kpis-v3 .kpi-filter.active-filter::after{
+  color:#d84e2d;
+  background:#fff0e6;
+  border-color:#efba98;
+}
+
+/* Navigation more energetic */
+.module-tabs{
+  border:1px solid #ebd4c0;
+  background:linear-gradient(180deg,#fff,#fff8f1);
+}
+.module-tab{
+  color:#596a80;
+  font-weight:800;
+}
+.module-tab svg{color:#6f8094}
+.module-tab:hover{
+  color:#d8502f;
+  background:linear-gradient(180deg,#fffaf5,#fff3e9);
+}
+.module-tab.active{
+  color:#d84c2d;
+  background:linear-gradient(90deg,#fff1e6 0%,#fff8f3 50%,#fff1e6 100%);
+  box-shadow:inset 0 0 0 1px #f18d61,0 4px 12px rgba(220,87,38,.08);
+}
+.module-tab.active svg{color:#ef6c2a}
+.module-tab.active::after{
+  left:18%;right:18%;height:3px;
+  background:linear-gradient(90deg,#f5b33a,#ef6d2a,#d94b2e);
+}
+
+/* Side panels gain character */
+.filters,.analytics,.coverage-controls,.coverage-summary,.nearest-controls,.nearest-summary{
+  background:
+    linear-gradient(180deg,#fff 0%,#fffaf6 100%);
+}
+.filters{border-top:3px solid #ef7b3f}
+.analytics{border-top:3px solid #f0b03b}
+.coverage-controls{border-top:3px solid #e95f32}
+.coverage-summary{border-top:3px solid #f0a03c}
+.nearest-controls{border-top:3px solid #e56d35}
+.nearest-summary{border-top:3px solid #eeb33d}
+.panel-title{color:#1f324a}
+.panel-title::before{
+  content:"";
+  width:4px;height:15px;border-radius:3px;
+  background:linear-gradient(180deg,#f5b13a,#e85d2f);
+  display:inline-block;
+  margin-right:7px;
+  vertical-align:-2px;
+}
+
+/* Inputs with warmer contrast */
+.filters input,.filters select,.coverage-controls select{
+  background:#fffdfb;
+  border-color:#dfcbbb;
+}
+.filters input:hover,.filters select:hover,.coverage-controls select:hover{
+  border-color:#e9a076;
+}
+.filters input:focus,.filters select:focus,.coverage-controls select:focus{
+  border-color:#ec7d45;
+  box-shadow:0 0 0 3px rgba(238,111,48,.13);
+}
+.result-count{
+  background:linear-gradient(135deg,#fff1e5,#fff8f2);
+  border-color:#edc7aa;
+}
+.result-count strong{color:#d84d2d}
+
+/* Map framed with warmer highlight */
+.map-wrap{
+  border:1px solid #dfc9b8;
+  box-shadow:0 12px 30px rgba(89,68,47,.12);
+}
+.map-wrap::after{
+  content:"";
+  position:absolute;inset:0;
+  pointer-events:none;
+  border-radius:16px;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.75);
+}
+.map-layers{
+  border-color:#e7c7ad;
+  background:rgba(255,250,245,.96);
+}
+.map-layers-title{color:#c8502f}
+.layer-toggle input{accent-color:#e9612f}
+.legend{
+  border-color:#e7c7ad;
+  background:rgba(255,250,245,.97);
+}
+
+/* Analytics more lively */
+.chart-box{
+  padding:8px;
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(240,160,60,.11),transparent 60%),
+    #fff;
+  border:1px solid #f0dfd1;
+}
+.top-list h3{color:#c35d35}
+.cat-row strong{color:#d14f2d}
+
+/* Table with stronger visual hierarchy */
+.table-panel{
+  background:linear-gradient(180deg,#fff 0%,#fffaf6 100%);
+  border-top:3px solid #ed7a3d;
+}
+th{
+  background:linear-gradient(180deg,#fff0e4,#ffe8d6);
+  color:#a84625;
+  font-weight:800;
+}
+tbody tr:nth-child(even){background:#fffaf6}
+tbody tr:hover{
+  background:linear-gradient(90deg,#fff2e7,#fff9f4);
+}
+.facility-name-link{color:#2d5f96}
+.facility-name-link:hover{color:#d84f2e}
+
+/* Action emphasis */
+.primary-action{
+  background:linear-gradient(90deg,#e7512e 0%,#f47a27 55%,#f1a238 100%);
+  box-shadow:0 6px 14px rgba(222,91,37,.22);
+}
+.primary-action:hover{filter:brightness(1.03)}
+.secondary-action{
+  border-color:#eac3a6;
+  color:#cf5a30;
+}
+.coverage-selected,.nearest-location-card,.nearest-instruction{
+  background:linear-gradient(180deg,#fffdfb,#fff7ef);
+  border-color:#efcfb8;
+}
+.coverage-disclaimer,.nearest-note{
+  background:linear-gradient(180deg,#fff6e8,#fffaf3);
+}
+
+/* Stronger density visual language */
+.density-title-icon,
+.coverage-title-icon,
+.nearest-title-icon{
+  background:linear-gradient(135deg,#fff0e4,#ffe1cb);
+  color:#d84f2d;
+  border-color:#efbea0;
+}
+
+/* Footer accent */
+.footer-version{
+  background:linear-gradient(90deg,#d8492f,#ef742b,#f0a63a);
+}
